@@ -1,0 +1,14 @@
+package filehandling;
+
+import java.io.FileInputStream;
+
+public class ReadPropertyFile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		FileInputStream file=new file("test.properties");
+		
+	}
+
+}

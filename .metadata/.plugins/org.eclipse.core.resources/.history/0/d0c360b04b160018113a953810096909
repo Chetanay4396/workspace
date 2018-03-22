@@ -1,0 +1,30 @@
+package filehandling;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Enumeration;
+import java.util.Properties;
+
+public class Service {
+ 
+	Properties prop;
+	
+	public void getdata(File file){
+	   
+	try {
+		prop = FileInteration.getPropertyFile();
+	
+		Enumeration enumkey=prop.keys();
+		while(enumkey.hasMoreElements()){
+		String key=(String)enumkey.nextElement();
+		String value=prop.getProperty(key);
+		System.out.println("Key:" +key +"Value:"+value);
+	}}catch(FileNotFoundException e){
+		System.out.println("Unable to Load the File");
+	} 
+	catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+}

@@ -1,0 +1,15 @@
+package test;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     int a=5;
+		System.out.println("hello" + a);
+        Map<String,String> map1=new HashMap<String,String>();
+	}
+
+}

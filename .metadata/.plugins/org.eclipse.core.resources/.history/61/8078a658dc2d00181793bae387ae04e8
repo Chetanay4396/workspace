@@ -1,0 +1,26 @@
+package filehandling;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class inputfile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		File f=new File("src/test2.txt");
+		try {
+			FileInputStream fp =new FileInputStream(f);
+			StringBuffer string=new StringBuffer();
+			String line;
+			while((line=fp.readLine())!=null){}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+
+	}
+
+}
