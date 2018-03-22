@@ -27,7 +27,7 @@ public class inputfile {
 			System.out.println(string);
 			fp.close();
 			String converion=string.toString();
-			String sb=converion.replaceAll("hj", "fgh");
+			String sb=converion.replaceAll("hj", "");
 			System.out.println(sb);
 			FileWriter fw=new FileWriter(f);
 			fw.write(sb);
